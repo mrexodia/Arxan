@@ -264,7 +264,7 @@ static bool cbExplore(int argc, char* argv[])
 				std::reverse(oldInstrInfo.begin(), oldInstrInfo.end());
 
 				//TODO: write a proper matching algorithm for:
-				// mov rdx,rdr2.7FF63798DE6D
+				// mov rdx,7FF63798DE6D
 				// cmove rcx,rdx
 				// mov qword ptr ss:[rsp+10],rcx
 				auto cmovItr = std::find_if(oldInstrInfo.begin(), oldInstrInfo.end(), [](const InstrInfo& info)
